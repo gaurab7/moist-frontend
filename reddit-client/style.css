@@ -1,0 +1,38 @@
+.container{
+    background-color: rgb(83, 188, 196);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a202c;
+    padding: 10px;
+}
+
+.nav-links{
+    color: #cbd5e0;
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #88abc5;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
